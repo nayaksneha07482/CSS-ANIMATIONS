@@ -1,0 +1,83 @@
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+
+}
+
+ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: #ccc;
+	padding: 0;
+	margin: 0;
+}
+ul li{
+	list-style-type: none;
+	position: relative;
+	width: 20%;
+	height: 100%;
+	border-right: 1px solid #000;
+	float: left;
+	box-sizing: border-box;
+	transition: .5s;
+	text-align: center;
+	overflow:hidden;
+
+}
+ul li:nth-child(1){
+	background: url("https://images.unsplash.com/photo-1501447748741-aca2be65f92a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=060ac6d494083cb1e9005c32b355f423&auto=format&fit=crop&w=334&q=80");
+	background-size: cover;
+	background-position: center;
+}
+ul li:nth-child(2){
+	background: url("https://images.unsplash.com/photo-1506383480690-db097361431d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=618ebd1b7cc50f461a0dd546e319aba8&auto=format&fit=crop&w=334&q=80");
+	background-size: cover;
+	background-position: center;
+}
+ul li:nth-child(3){
+	background: url(https://images.unsplash.com/photo-1512868567929-384904a22a9a?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=40eab1c87e8460c5cd87f73cbba58ab0&auto=format&fit=crop&w=334&q=80);
+	background-size: cover;
+	background-position: center;
+}
+ul li:nth-child(4){
+	background: url(https://images.unsplash.com/photo-1503327431567-3ab5e6e79140?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=1600d7c3643474cad51afa03d891722c&auto=format&fit=crop&w=400&q=80);
+	background-size: cover;
+	background-position: center;
+}
+ul li:nth-child(5){
+	background: url(https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?ixlib=rb-0.3.5&s=a242c868be541be046abe1b40584d799&auto=format&fit=crop&w=400&q=80);
+	background-size: cover;
+	background-position: center;
+}
+
+ul:hover li{
+	width: 10%;
+	
+}
+
+ul li:hover{
+	width: 60%;
+
+}
+
+ul li .content{
+	box-sizing: border-box;
+	position: absolute;
+	bottom: -100%;
+	left: 0;
+	width: 100%;
+	background-color: rgba(0,0,0,.7);
+	overflow: hidden;
+	color:#fff;
+	opacity: 0;
+}
+
+ul li:hover .content{
+	bottom: 0;
+	opacity: 1;
+	transition: .5s .5s;
+}
