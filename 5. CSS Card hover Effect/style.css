@@ -35,7 +35,7 @@ img {
     position: relative;
     margin-top: 20vh;
     border-radius: 5px;
-    background-color: #000;
+    background-color: #59b8c4;
     box-shadow: 0 10px 40px 2px rgba(0, 0, 0, 0.4);
     transform-origin: center center 0px;
     animation: animate 3s infinite ease-in-out;
@@ -139,4 +139,18 @@ img {
     100% {
         margin-top: 20vh;
     }
+}
+.credit{
+    padding-top: 5%;
+    /* border: 1px solid red; */
+    margin: auto;
+    font-size: larger;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(190, 7, 86);
+
+}
+.credit a{
+    text-decoration: none;
+    color: rgb(12, 12, 65);
 }
